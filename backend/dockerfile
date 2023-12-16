@@ -1,0 +1,16 @@
+# specify the node base image with your desired version node:<version>
+FROM node:16
+
+# replace this with your application's default port
+EXPOSE 8888
+
+# copy the application code
+COPY . /
+
+# install dependencies
+WORKDIR /
+RUN npm install
+
+# start the application
+# RUN docker compose up --build
+CMD ["npm", "start"]

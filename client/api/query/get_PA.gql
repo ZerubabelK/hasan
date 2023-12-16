@@ -1,0 +1,8 @@
+query get_staff{
+  items:staffs(where:{role:{_ilike:"PA"}}){
+    id
+    name
+    phone_number
+    
+  }
+}

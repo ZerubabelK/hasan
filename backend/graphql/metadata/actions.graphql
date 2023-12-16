@@ -1,0 +1,44 @@
+type Mutation {
+  login(
+    params: loginData!
+  ): loginOutput
+}
+
+type Mutation {
+  signup(
+    params: signupData!
+  ): signupOutput
+}
+
+type Mutation {
+  upload(
+    folder: String!
+    file: [String!]
+  ): uploadOutput
+}
+
+input signupData {
+  name: String!
+  phone_number: String!
+  email: String!
+  password: String!
+}
+
+input loginData {
+  email: String!
+  password: String!
+}
+
+type signupOutput {
+  accessToken: String!
+}
+
+type loginOutput {
+  message: String!
+  token: String!
+}
+
+type uploadOutput {
+  urls: [String]!
+}
+

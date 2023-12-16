@@ -1,0 +1,21 @@
+query get_staff($filter:staffs_bool_exp){
+  items:staffs(where:$filter){
+    id
+    staff_id
+    AIB_exp
+    bio_exp
+    disability_exp
+    DVLA_exp
+    epilepsy_exp
+    first_aid_exp
+    passport_exp
+    safeguarding_exp
+    taxi_badge_exp
+    address
+    name
+    phone_number
+    role
+    status
+    document_url
+  }
+}

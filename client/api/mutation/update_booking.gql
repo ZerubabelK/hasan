@@ -1,0 +1,5 @@
+mutation assign($set:booking_set_input $id:uuid!){
+  update_booking_by_pk(pk_columns:{id:$id}, _set:$set){
+   id 
+  }
+}

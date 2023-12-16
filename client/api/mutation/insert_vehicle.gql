@@ -1,0 +1,5 @@
+mutation insert_vehicle($item:vehicles_insert_input!){
+  insert_vehicles_one(object:$item){
+    id
+  }
+}

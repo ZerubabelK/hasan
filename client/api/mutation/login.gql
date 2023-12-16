@@ -1,0 +1,6 @@
+mutation login($data:loginData!){
+  login(params:$data){
+    token
+    message
+  }
+}

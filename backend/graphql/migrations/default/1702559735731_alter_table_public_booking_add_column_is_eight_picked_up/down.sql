@@ -1,0 +1,4 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- alter table "public"."booking" add column "is_eight_picked_up" boolean
+--  null default 'false';

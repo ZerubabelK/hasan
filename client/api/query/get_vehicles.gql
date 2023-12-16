@@ -1,0 +1,15 @@
+query get_vehcles($filter: vehicles_bool_exp){
+  items:vehicles (where:$filter){
+    id
+    council_inspection_exp
+    created_at
+    insurance_exp
+    owner
+    taxi_plate_exp
+    vehicle_reg
+    updated_at
+    MOT_exp
+    status
+    document_url
+  }
+}

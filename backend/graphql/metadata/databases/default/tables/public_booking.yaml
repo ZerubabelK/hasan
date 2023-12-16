@@ -1,0 +1,26 @@
+table:
+  name: booking
+  schema: public
+update_permissions:
+  - role: staff
+    permission:
+      columns:
+        - is_eight_drop
+        - is_eight_picked_up
+        - is_five_drop
+        - is_five_picked_up
+        - is_four_drop
+        - is_four_picked_up
+        - is_one_drop
+        - is_one_picked_up
+        - is_seven_drop
+        - is_seven_picked_up
+        - is_six_drop
+        - is_six_picked_up
+        - is_three_drop
+        - is_three_picked_up
+        - is_two_drop
+        - is_two_picked_up
+      filter: {}
+      check: null
+    comment: ""

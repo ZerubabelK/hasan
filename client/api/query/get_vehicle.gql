@@ -1,0 +1,13 @@
+query get_vehcles($id: uuid!){
+  items:vehicles_by_pk (id:$id){
+    id
+    council_inspection_exp
+    created_at
+    insurance_exp
+    owner
+    taxi_plate_exp
+    vehicle_reg
+    updated_at
+    MOT_exp
+  }
+}

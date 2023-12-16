@@ -1,0 +1,5 @@
+mutation insert_booking($data:booking_insert_input!) {
+  insert_booking_one(object:$data){
+   id 
+  }
+}

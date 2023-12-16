@@ -1,0 +1,23 @@
+actions:
+  - name: login
+    definition:
+      kind: synchronous
+      handler: '{{ACTION_BASE_URL}}/login'
+  - name: signup
+    definition:
+      kind: synchronous
+      handler: '{{ACTION_BASE_URL}}/signup'
+  - name: upload
+    definition:
+      kind: synchronous
+      handler: '{{ACTION_BASE_URL}}/upload'
+custom_types:
+  enums: []
+  input_objects:
+    - name: signupData
+    - name: loginData
+  objects:
+    - name: signupOutput
+    - name: loginOutput
+    - name: uploadOutput
+  scalars: []

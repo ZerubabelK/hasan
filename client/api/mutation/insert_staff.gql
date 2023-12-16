@@ -1,0 +1,5 @@
+mutation insert_staff($item: staffs_insert_input!) {
+  insert_staffs_one(object: $item) {
+    id
+  }
+}

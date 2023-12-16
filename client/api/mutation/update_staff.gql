@@ -1,0 +1,5 @@
+mutation assign($set:staffs_set_input $id:uuid!){
+  update_staffs_by_pk(pk_columns:{id:$id}, _set:$set){
+   id 
+  }
+}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.sideSpace {
+    @apply md:max-w-[1790px] mx-auto h-full w-full px-4 sm:px-10;
+  }
+  
+
+/* ------------------------------- Scroll Bar ------------------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+    @apply rounded-xl;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-primary;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-light;
+  }
